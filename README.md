@@ -19,4 +19,5 @@ Simple Nginx web app containerized with Docker. Demonstrates:
 - Docker installed
 
 ### Build & Run
-
+-docker build -t somesha/nginx-app:v1 .
+-docker run -d --name my-nginx --network host somesha/nginx-app:v1
