@@ -36,3 +36,7 @@ docker run -d --name my-nginx --network host somesha/nginx-app:v1
 
 Test the application
 curl http://127.0.0.1
+
+## ⏳ Next Steps (Week 1 Complete)
+- ✅ GitHub Actions CI/CD pipeline (auto-build + push)
+- ✅ Docker Hub: https://hub.docker.com/r/somesha/nginx-app
