@@ -1,0 +1,52 @@
+## 🛠️  Tech Stack
+- **Containerization**: Docker, Nginx (Alpine)
+- **Orchestration**: Docker Compose
+- **Version Control**: Git & GitHub
+- **CI/CD**: GitHub Actions
+- **Cloud**: AWS EC2
+
+# 🚀 Dockerized Nginx App - DevOps Portfolio Project
+## 🚀 Quick Start
+
+### Prerequisites
+```bash
+# Ubuntu / Debian
+sudo apt-get install docker.io
+
+# Clone the repository
+git clone https://github.com/Somesha-honnali/docker-nginx-app.git
+cd docker-nginx-app
+
+# Build the Docker image
+docker build -t somesha/nginx-app:v1 .
+
+# Run the container (host networking for local demo)
+docker run -d --name my-nginx --network host somesha/nginx-app:v1
+
+# Test the application
+curl http://127.0.0.1
+
+
+# Build the Docker image
+docker build -t somesha/nginx-app:v1 .
+
+# Run the container (host networking for local demo)
+docker run -d --name my-nginx --network host somesha/nginx-app:v1
+
+# Test the application
+curl http://127.0.0.1```
+
+## 📋 Overview
+Production-ready Nginx web app demonstrating **end-to-end DevOps pipeline**:
+- Docker containerization with healthchecks
+- GitHub Actions CI/CD automation
+- Docker Hub image publishing
+- AWS EC2 live deployment
+
+**Live site:** http://3.89.223.3
+
+## 🛠️ Tech Stack
+- **Containerization**: Docker, Nginx (Alpine)
+- **Orchestration**: Docker Compose
+- **Version
+
