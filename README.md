@@ -55,3 +55,19 @@ curl http://127.0.0.1
 3. Refresh http://3.89.223.3 → LIVE changes!
 
 **Week 1 Complete: Production DevOps Engineer Level** 🚀
+## 🔍 Architecture Overview
+
+- Local development with Docker and docker-compose.
+- GitHub as source of truth for code and Dockerfile.
+- GitHub Actions builds and pushes Docker image to Docker Hub on every push to main.
+- AWS EC2 pulls image from Docker Hub and runs Nginx container on port 80.
+- Users access the app via http://3.89.223.3.
+### Local development
+cd docker-nginx-app        # Change into project
+docker compose up -d       # Start locally
+curl http://127.0.0.1      # Test
+
+### Deployment (EC2)
+docker pull somesha/nginx-app:latest
+docker run -d -p 80:80 --name my-nginx --restart unless-stopped somesha/nginx-app:latest
+
